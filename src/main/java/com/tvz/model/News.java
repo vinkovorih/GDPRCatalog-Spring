@@ -8,7 +8,24 @@ public class News {
     private String content;
     private String image;
     private Timestamp date;
-    private Long priority;
+    private String large;
+    private String author;
+
+    public String getLarge() {
+        return large;
+    }
+
+    public void setLarge(String large) {
+        this.large = large;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
     public Long getId() {
         return id;
@@ -16,14 +33,6 @@ public class News {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Long getPriority() {
-        return priority;
-    }
-
-    public void setPriority(Long priority) {
-        this.priority = priority;
     }
 
     public String getTitle() {

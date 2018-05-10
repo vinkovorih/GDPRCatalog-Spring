@@ -7,8 +7,10 @@ import java.util.List;
 
 public interface PortalDAO {
 
-    ResponseEntity<List<News>> getNews();
-    ResponseEntity<String> newPost(News news);
-    ResponseEntity<String> deletePost(Long id);
-
+    List<News> getNews();
+    List<News> getLikesForUser(Long id);
+    String newPost(News news);
+    String deletePost(Long id);
+    String likeDislikePost(Long iduser, Long idPost);
+    void insertBugs(String author, String title, String content);
 }

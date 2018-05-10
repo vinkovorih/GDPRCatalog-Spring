@@ -9,6 +9,29 @@ public class Register {
     private String firstname;
     private String lastname;
     private String email;
+    private Long dep;
+
+    @Override
+    public String toString() {
+        return "Register{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", email='" + email + '\'' +
+                ", dep=" + dep +
+                '}';
+    }
+
+    public Long getDep() {
+        return dep;
+    }
+
+    public void setDep(Long dep) {
+        this.dep = dep;
+    }
 
     public Long getId() {
         return id;

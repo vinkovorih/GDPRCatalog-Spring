@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class RedirectController {
 
-    @RequestMapping("/**")
-    public String index(){
-        return "index.html";
-    }
+   @RequestMapping("/")
+   public String index() {
+       return "index.html";
+   }
+
 }
